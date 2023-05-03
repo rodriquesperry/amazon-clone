@@ -25,54 +25,65 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 const Navigation = () => {
   return (
     <>
-      <nav className='navigation'>
-        <Link to='/'>
-          <img className='navigation_logo' src={logo} alt='amazon logo' />
-        </Link>
+      <section className='navigation_container'>
+        <div className='navigation'>
+          <Link to='/'>
+            <img className='navigation_logo' src={logo} alt='amazon logo' />
+          </Link>
 
-        <Link to='/login' className='navigation_link'>
-          <div className='navigation_option'>
-            <span className='navigation_option_line_one'>Hello</span>
-            <span className='navigation_option_line_two'>Select your address</span>
+          {/* <div className='address'>
+            <Link to='/login' className='navigation_link'>
+              <div className='navigation_option'>
+                <span className='navigation_option_line_one'>Hello</span>
+                <span className='navigation_option_line_two'>
+                  Select your address
+                </span>
+              </div>
+            </Link>
+          </div> */}
+
+          <div className='navigation_search'>
+            <input type='text' className='navigation_searchbar' />
+            <SearchIcon className='navigation_search_icon' />
           </div>
-        </Link>
 
-        <div className='navigation_search'>
-          <input type='text' className='navigation_searchbar' />
-          <SearchIcon className='navigation_search_icon' />
+          <div className='navigation_nav'>
+            <Link to='/login' className='navigation_link'>
+              <div className='navigation_option'>
+                <span className='navigation_option_line_one'>
+                  Hello Rodriques
+                </span>
+                <span className='navigation_option_line_two'>Sign In</span>
+              </div>
+            </Link>
+            <Link to='/login' className='navigation_link'>
+              <div className='navigation_option'>
+                <span className='navigation_option_line_one'>Returns</span>
+                <span className='navigation_option_line_two'>& Orders</span>
+              </div>
+            </Link>
+            <Link to='/login' className='navigation_link'>
+              <div className='navigation_option'>
+                <span className='navigation_option_line_one'>Your</span>
+                <span className='navigation_option_line_two'>Prime</span>
+              </div>
+            </Link>
+            <Link to='/checkout' className='navigation_link'>
+              <div className='navigation_cart_option'>
+                <IconButton aria-label='cart'>
+                  <StyledBadge badgeContent={4}>
+                    <ShoppingCartIcon className='cart' />
+                  </StyledBadge>
+                </IconButton>
+                <span className='navigation_option_line_two cart_text'>
+                  Cart
+                </span>
+              </div>
+            </Link>
+          </div>
+
         </div>
-
-        <div className='navigation_nav'>
-          <Link to='/login' className='navigation_link'>
-            <div className='navigation_option'>
-              <span className='navigation_option_line_one'>Hello Rodriques</span>
-              <span className='navigation_option_line_two'>Sign In</span>
-            </div>
-          </Link>
-          <Link to='/login' className='navigation_link'>
-            <div className='navigation_option'>
-              <span className='navigation_option_line_one'>Returns</span>
-              <span className='navigation_option_line_two'>& Orders</span>
-            </div>
-          </Link>
-          <Link to='/login' className='navigation_link'>
-            <div className='navigation_option'>
-              <span className='navigation_option_line_one'>Your</span>
-              <span className='navigation_option_line_two'>Prime</span>
-            </div>
-          </Link>
-          <Link to='/checkout' className='navigation_link'>
-            <div className='navigation_cart_option'>
-              <IconButton aria-label='cart'>
-                <StyledBadge badgeContent={4}>
-                  <ShoppingCartIcon className='cart' />
-                </StyledBadge>
-              </IconButton>
-            </div>
-          </Link>
-        </div>
-
-      </nav>
+      </section>
       <Outlet />
     </>
   );
