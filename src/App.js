@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
-import Navigation from './Routes/Navigation.component';
-import Checkout from './Routes/Checkout.component';
-import Login from './Routes/Login.component';
+import Navigation from './Routes/navigation/Navigation.component';
+import Checkout from './Routes/checkout/Checkout.component';
+import Login from './Routes/login/Login.component';
 import './App.css';
 
 function App() {
