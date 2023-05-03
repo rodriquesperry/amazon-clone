@@ -9,6 +9,8 @@ import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
+import { useStateValue } from '../../contexts/StateProvider';
+
 import './navigation.styles.css';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -23,6 +25,9 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const Navigation = () => {
+  const [{ cart }] = useStateValue();
+  console.log(cart)
+
   return (
     <>
       <section className='navigation_container'>
@@ -71,7 +76,7 @@ const Navigation = () => {
             <Link to='/checkout' className='navigation_link'>
               <div className='navigation_cart_option'>
                 <IconButton aria-label='cart'>
-                  <StyledBadge badgeContent={4}>
+                  <StyledBadge badgeContent={cart?.length}>
                     <ShoppingCartIcon className='cart' />
                   </StyledBadge>
                 </IconButton>
@@ -81,7 +86,6 @@ const Navigation = () => {
               </div>
             </Link>
           </div>
-
         </div>
       </section>
       <Outlet />
