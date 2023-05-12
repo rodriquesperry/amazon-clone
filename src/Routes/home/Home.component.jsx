@@ -12,14 +12,14 @@ const Home = () => {
         <div className='home_row'>
           <Product
             id='12341'
-            price='500'
+            price={500}
             title='Lean Startup: The Complete Step-by-Step Lean Six Sigma Startup Guide'
             rating={5}
             image='https://m.media-amazon.com/images/I/41IyOLVdhtL.jpg'
           />
           <Product
             id='12342'
-            price='500'
+            price={500}
             title='Lean Startup: The Complete Step-by-Step Lean Six Sigma Startup Guide'
             rating={5}
             image='https://m.media-amazon.com/images/I/41IyOLVdhtL.jpg'
@@ -28,21 +28,21 @@ const Home = () => {
         <div className='home_row'>
           <Product
             id='12343'
-            price='500'
+            price={500}
             title='Lean Startup: The Complete Step-by-Step Lean Six Sigma Startup Guide'
             rating={5}
             image='https://m.media-amazon.com/images/I/41IyOLVdhtL.jpg'
           />
           <Product
             id='12344'
-            price='500'
+            price={500}
             title='Lean Startup: The Complete Step-by-Step Lean Six Sigma Startup Guide'
             rating={5}
             image='https://m.media-amazon.com/images/I/41IyOLVdhtL.jpg'
           />
           <Product
             id='12345'
-            price='500'
+            price={500}
             title='Lean Startup: The Complete Step-by-Step Lean Six Sigma Startup Guide'
             rating={5}
             image='https://m.media-amazon.com/images/I/41IyOLVdhtL.jpg'
@@ -51,7 +51,7 @@ const Home = () => {
         <div className='home_row'>
           <Product
             id='12346'
-            price='500'
+            price={500}
             title='Lean Startup: The Complete Step-by-Step Lean Six Sigma Startup Guide'
             rating={5}
             image='https://m.media-amazon.com/images/I/41IyOLVdhtL.jpg'
