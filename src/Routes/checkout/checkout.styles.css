@@ -1,0 +1,36 @@
+.checkout_container {
+  display: flex;
+  background-color: rgb(237, 238, 238);
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.amazon_img_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.amazon_img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.checkout_left {
+  width: 100%;
+}
+
+.checkout_title {
+  margin: 0 0 2rem;
+}
+
+.checkout_product_container {
+  margin: 2rem 0 0 2rem;
+}
+
+.checkout_right {
+  width: 35%;
+  /* padding: 0 2rem 0 0; */
+  
+}

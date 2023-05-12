@@ -1,0 +1,23 @@
+.subtotal_container {
+  width: 300px;
+  min-height: 100px;
+  background-color: #ffffff;
+  margin: 5.85rem 3rem 2rem 0;
+  border-radius: 0.2rem;
+  padding: 1rem 1rem 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.subtotal_text {
+  font-size: 1.15rem;
+}
+
+.subtotal_button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: .4rem;
+  border-radius: .5rem;
+}

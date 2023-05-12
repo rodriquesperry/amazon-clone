@@ -1,0 +1,94 @@
+.navigation_container {
+  display: block;
+  background-color: #131921;
+  width: 100%;
+  position: sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation_logo {
+  width: 110px;
+  object-fit: contain;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.navigation_search {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.navigation_searchbar {
+  display: flex;
+  width: 100%;
+  min-width: 100px;
+  border: none;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  max-width: 750px;
+}
+
+.navigation_search_icon {
+  background-color: #cd9042;
+  padding: 0.69rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.navigation_nav {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+.navigation_link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navigation_option_line_one {
+  font-size: 0.77rem;
+}
+
+.navigation_option_line_two {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.navigation_cart_option {
+  display: flex;
+  padding-right: 5px;
+  margin-right: 1rem;
+}
+
+.cart {
+  color: #fff;
+}
+
+.cart_count {
+  color: #cd9042;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cart_text {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 0.3rem;
+  margin-bottom: 0.5rem;
+}
