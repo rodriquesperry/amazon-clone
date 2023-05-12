@@ -6,7 +6,7 @@ import './product.styles.css';
 const Product = ({ id, title, image, rating, price }) => {
 
   const [{ cart }, dispatch] = useStateValue();
-  const addToBasket = () => {
+  const addToCart = () => {
     // Add Item to basket
     dispatch({
       type: 'ADD_TO_CART',
@@ -43,7 +43,7 @@ const Product = ({ id, title, image, rating, price }) => {
       {/* Price */}
 
       <img src={image} alt='Product Image' />
-      <button onClick={addToBasket}>Add To Cart</button>
+      <button onClick={addToCart}>Add To Cart</button>
     </div>
   );
 };

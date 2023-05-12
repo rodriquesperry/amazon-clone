@@ -2,15 +2,16 @@
   display: block;
   background-color: #131921;
   width: 100%;
+  position: sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  overflow: hidden;
 }
 
 .navigation_logo {

@@ -26,7 +26,6 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const Navigation = () => {
   const [{ cart }] = useStateValue();
-  console.log(cart)
 
   return (
     <>
